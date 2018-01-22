@@ -1,0 +1,403 @@
+PARK,OWNER,lat,max_MW,lon
+WP Leeuwarden,?,53.111713,1.8,5.452985
+Gruttoweg,a Campo,52.328531,19.71,5.373924
+Dintelmond Sabrinapolder,Activabedrijf Wind Nederland BV (RWE Essent),51.6592,0.85,4.370623577
+Andijk,Andijkerwind bv,52.726444,2.55,5.183342
+Windstroom,Ansjovistocht-1,52.483991,12.8,5.677173
+Kluutweg,Assies-1,52.342614,3.4,5.352416
+Baardmeesweg,AvdMeer,52.366206,4.07,5.513101
+Eemshaven,Bakker,53.4219,9,6.8738
+Delfzijl-Zuid,Banc-17,53.285,69.4,6.9554
+Beabuorren,Beabuorren,53.047669,10.4,5.488806
+WP Noordpolderweg,Berghuis,53.4134,1.7,6.4973
+Pijlstaartweg,Boeren,52.412032,18,5.56705
+,Bootsma,53.176834,2,5.45735
+,Boreas Wind B.V.,52.23199449,2.3,4.650920732
+,BP,51.952454,22.5,36.85
+BP,BP-NW,52.421031,9,4.774851
+Lelystad-Overijsselsetocht,Brommer-3,52.53241,6,5.570694
+Rippolder,Camperwind,51.588286,12.5,3.680572
+Laaksche Vaart,Cooperatie windpark Laaksche Vaart,51.6091,11.5,4.61422995
+WP Nieuwe Polderjongens,Cooperatieve Windenergievereniging Meerwind,52.23143568,4.6,4.642872664
+Duikerweg,Costermans,52.36226,3.42,5.41459
+De Nes,CVW Waterland 1,52.433801,4.6,5.088321
+4 elementen,de Clerck,52.567068,0.66,5.572298
+,de Graaf,52.783547,2,4.686652
+,De Plaet B.V.,51.671972,21,4.356693
+,De Wilde Wind Holding B.V. en SurveyCom B.V.,51.86727472,24,4.275299109
+,de Wit,52.827568,2,4.831717
+,De Wolf Nederland windenergie,51.97798716,15,4.069219932
+WP Defensie Coevorden,Defensie Noord 1,52.642077,15,6.729004
+Rilland,Delta,51.385,14.4,4.259234
+Wp Anna Mariapolder,Delta Energy BV,51.386,5.4,4.260967
+,Delta Noord BV,53.454247,3.3,6.847465
+,Delta Windpark B.V.,51.69424364,3.05,4.160759361
+,Delta Windpark B.V.,51.69712705,3.05,4.158072478
+Borssele-Olaz,Deltan-2,51.445428,3.3,3.740257
+Koegorspolder,DIF,51.28854,44,3.83957
+Jacoba Haven,Div,51.59683,9,3.682411
+Neeltje Jans,Div,51.64016,9,3.697913
+Noordland,Div,51.622795,6,3.678464
+EWTW,ECN,52.817351,10.9,5.084067
+Scherventocht,ECN-1,52.831785,12.5,5.080088
+De Locht-Briareus,Ecowind,50.847275,2.5,6.011512
+De Locht-Gyges,Ecowind,50.844965,2.5,6.014189
+Kerststal,Eendragt,52.943146,0.66,4.786449
+WP Eeems,Electrabel,53.4396,27,6.8719
+Anna-Vosdijkpolder,Eneco,51.607256,15,4.053652
+Halderberge,Eneco,51.6131,10,4.463658
+Lopik,Eneco,51.992317,6,4.960529
+van Luna,Eneco,52.651227,6.9,4.79784
+Waalwijk-Ecopark,Eneco,51.7087,7.5,5.064773
+Windpark Luchterduinen,Eneco,52.4237,129,4.2
+Wp Sabinapolder vof,Eneco,51.6758161,9,4.40054158
+,Eneco,51.881087,2,4.244798
+,Eneco,51.748433,2.5,4.232543
+,Eneco,51.75932,2,4.211706
+,Eneco,51.761061,2,4.208952
+,Eneco,51.762797,2,4.206227
+,Eneco,51.764537,2,4.203473
+,Eneco,51.766257,2,4.200738
+,Eneco,51.768,2,4.198004
+,Eneco,51.934398,2.5,4.152577
+,Eneco,51.934411,1.5,4.002946
+,Eneco-2,51.933057,2.5,4.156519
+,Eneco-2,51.933993,1.5,4.006018
+,Eneco-3,51.931711,2.5,4.160464
+,Eneco-3,51.933367,1.5,4.008934
+,Eneco-4,51.932718,1.5,4.011965
+,Eneco-5,51.92926,2.5,4.168587
+,Eneco-5,51.932051,1.5,4.014849
+,Eneco-6,51.927489,2.5,4.171069
+,Eneco-6,51.93029,1.5,4.016834
+,Eneco-7,51.925401,2.5,4.172842
+,Eneco-7,51.928366,1.5,4.016972
+,Eneco-8,51.926485,1.5,4.016967
+,Eneco-M,51.708609,2.75,4.113026
+,Eneco-O,51.708289,2.75,4.11623
+,Eneco-W,51.708939,2.75,4.109864
+,Enercon Flevoland BV,52.54793591,3,5.556889378
+Kapelle-Schore,Energy C.-2,51.454562,0.45,3.987437
+Folkertsma Workum,Eolica Progetti BV,52.95086802,0.04,5.455930757
+,EPZ,51.440249,2.75,3.718078
+Borsele,EPZ-3,51.437939,5.5,3.713587
+,ESK,53.180214,2,5.458751
+De Beitel,Essent,50.847857,0.75,5.996822
+Dinteloord,Essent,51.6482,2.4,4.351974
+Emmapolder,Essent,53.451,60,6.7892
+Halsteren,Essent,51.5131,6.8,4.222397
+Sabinapolder,Essent,51.6609,5.95,4.37506
+Volkerak,Essent,51.6847,9.35,4.39307
+Westereems,Essent,53.4444,105,6.7888
+Zuidermeerdijk,Essent,52.642243,1.5,5.626191
+Windpark Eemshaven,Essent 1,53.2651,12.3,6.4914
+Harkstede,Essent-1,53.2266,0.96,6.6713
+Scheemda,Essent-1,53.1736,0.96,6.9267
+Westermeerdijk-II,Essent-26,52.716641,7.5,5.595163
+Etten-Leur,Etten Leur-NW,51.6221,6.5,4.624566
+Afrikahaven,Evelop,52.426519,24,4.73977
+,Evelop / Delta,51.944873,10,4.011505
+Burgervlotbrug,Evelop/Kenn/Part,52.757044,7.65,4.684674
+EWI,EWI-1,52.533464,14,5.635806
+WP Smid,firma Smid VOF,52.393409,0.85,5.483083
+WP Frivis Franeker,Fri-Energy BV,53.18229,0.85,5.514441
+,Frivis-1,53.192194,1.3,5.427721
+,Frivis-2,53.193878,1.3,5.428633
+WP Oudenstaart B.V.,Fuji,51.6001,10,5.01489
+Futenweg,Futenweg-W,52.393596,10.5,5.564953
+,Geertsema,53.3487,1.3,6.4787
+Herbayum,GES,53.17786,2.5,5.489566
+Spannenburg,GES,52.922702,1.35,5.693472
+,Giessenwind B.V.,51.83692807,3,4.896381623
+,Giessenwind B.V.,51.835585,3,4.891202021
+,Giessenwind B.V.,51.83450179,3,4.885889257
+,Greenchoice,51.90174802,21,4.215971698
+,Groen,52.729346,2,4.854148
+Groetpolder,Groetpolder,52.786963,10.8,4.907403
+Growind,Growind,53.4573,63,6.8107
+Hagenwind,Hagenwind,51.965407,16,6.531929
+De Harns,Heeg-Wiek25%,53.126565,0.75,5.578219
+Wp Allingawier,Hempenius,53.039,0.9,5.454699
+Marrum,Hoogland,53.323562,6.1,5.774796
+Wp Burgerveen-Oost,HVC,52.235591,6.2,4.657192
+Haarlem,IE Investments-1,52.402592,1,4.664046
+Priempad,IJzendoorn,52.305492,0.1,5.378874
+Vlissingen,Indufor-1,51.477225,4.825,3.693641
+Ossenkampweg,Ittersum,52.363708,5.7,5.551648
+Zeebiestocht,Janssen-Maliepaard,52.47195,23,5.621127
+,Johnson,52.211872,3,4.878005
+Zijpe,Kennemerwind,52.742693,0.705,4.686317
+Lepelaarpad,Kets-1,52.395324,3.85,5.499077
+Klokbekertocht,Klokbekertocht-N,52.579479,9.9,5.581314
+Kluutmolen,Kluutmolen,52.314793,20,5.335319
+Eolienne,Knartocht-NW,52.400287,10,5.507515
+Kneeshoek,Kneeshoek,52.838455,4.8,4.828232
+Dodaarsweg,Koning,52.392428,18.78,5.384017
+Opperhans,Kooistra-Wiek25%,53.130317,0.75,5.581324
+Midlum,Kroon,53.18571,5.1,5.467493
+Kubbeweg,Kubbeweg,52.458993,34,5.622849
+De Beemden,Laaksche Vaart,52.8287,25,4.832024
+Wp Venhuizen,Langedijk,52.655,0.9,5.209287
+WF Liefting,Liefting,52.59707001,4.6,4.754129506
+WP Basal Franeker,Lupus Ventus BV,52.517795,1.7,5.589025
+,Maasland Windenergie BV,51.981662,3,4.048754
+,Maasland Windenergie BV,51.982517,3,4.04461
+Landtong,Maasland-Windenergie BV,51.983471,3,4.040525
+,Maasmond-windenergie B.V.,51.981659,3,4.048753
+,Maasmond-windenergie B.V.,51.982519,3,4.044608
+,Maasmond-windenergie B.V.,51.98347,3,4.040532
+Bosruiterweg,Mantingh,52.326081,3.6,5.432287
+,Marburg bv,51.6919,1.75,4.587579
+Weststad-III,Martensgroep,51.6739,15,4.834018
+Bloesemlaan,Mc-Lean-Grr,52.333951,18.15,5.429688
+Meermin,Meerwind,52.231869,0.25,4.641859
+Polderjongen,Meerwind,52.246595,0.225,4.666029
+Lelystad-Meeuwentocht,Meeuwentocht-1,52.404649,18,5.526596
+Desire,Monkelbaan,53.033352,0.6,5.855948
+,Nice Holding,51.6912,1.75,4.583791
+WP Nieuwegein,Nieuwegein,52.02394768,10,5.127477625
+,Noordertocht-1,52.483064,2,5.781987
+,Noordertocht-2,52.485532,2,5.785273
+,Noordertocht-3,52.48801,2,5.788576
+,Noordertocht-4,52.490484,2,5.791876
+Noordertocht,Noordertocht-ZW,52.559977,10.5,5.549134
+WP Velsen-Noord,Noordpier Wind B.V.,52.47002,5.85,4.57309
+OWEZ,Noordzeewind,52.630464,108,4.367657
+Noordoostpolder (Noorder,NOP Agrowind,52.769785,52.5,5.602632
+,NOP Agrowind,52.81839725,195,5.651781163
+,Notos Wind B.V.,52.2342893,2.3,4.654220883
+De Horn,NUON,52.736982,4.8,5.030003
+Enkhuizen,NUON,52.684632,4,5.276534
+Groettocht,NUON,52.790437,11.55,4.936659
+H.v.d.Kroonenberg,NUON,52.587817,16.8,5.550973
+Muiderhoek,NUON,52.37518,16.5,5.12385
+Oudelandertocht,NUON,52.76177,19.8,4.966187
+Oudendijk,NUON,52.605342,4.8,4.998129
+Rachel Carson,NUON,52.297875,18,5.329071
+Ulketocht,NUON,52.838424,6,4.906367
+Waardtocht,NUON,52.808744,8.65,4.922572
+Waterkaaptocht,NUON,52.886966,20,5.033815
+Prinses Alexia,NUON/Vattenfal 1,52.18499,122.4,5.261311
+Culemborg,NUON-1,51.935824,6,5.192106
+De Bjirmen,NUON-1,53.218305,6,5.510944
+De Mars,NUON-1,52.158779,6,6.191014
+Geesterambacht,NUON-1,52.693153,0.675,4.736067
+Hiddum-Houw,NUON-1,53.094638,5,5.386908
+Medemblik,NUON-1,52.794333,2,5.11873
+Waardpolder,NUON-1,52.802004,4.25,4.881269
+,Nuon-10,51.93188,13.5,3.99856
+Oerbiet,Oerbiet,53.193871,0.6,5.62705
+Olstertocht,Olster-Tocht-1,52.468201,12,5.762203
+Ooievaarsweg,Ooievaarsweg-O-vd Hoek,52.336513,15.2,5.435626
+Oostwind,P-1,52.671355,1.2,4.931132
+Prinses Amalia,Prinses Amalia,52.604583,120,4.240781
+,Prodeon,52.122314,3,4.623704
+,Prodeon,52.124673,3,4.619197
+,Prodeon,52.124768,3,4.613354
+,Prodeon,52.124363,3,4.607573
+,Prodeon-1,52.125758,2,4.485729
+,Prodeon-2,52.12699,2,4.487935
+,Pure Energie & Raedthuys & Deventer Energie Cooperatie,52.23685875,2.3,6.198290761
+,Pure Energie & Raedthuys & Deventer Energie Cooperatie,52.23690707,2.3,6.184586862
+,Qurrent,51.71106707,3,4.398829012
+,Qurrent,51.70853616,3,4.397304012
+,Qurrent,51.70342404,3,4.397025466
+,Qurrent,51.70612398,3,4.396795416
+Griete,Raedthuys,51.354913,1.6,3.9047
+Oldebroekertocht,Raedthuys,52.454357,13.8,5.731421
+Treurenberg,Raedthuys,51.7174,2.3,5.288866
+,Raedthuys & Deventer Energie Cooperatie,52.03464772,22.4,5.613950357
+,Raedthuys Windenergie BV,51.934188,3,4.140247
+,Raedthuys Windenergie BV,51.934353,3,4.135178
+,Raedthuys Windenergie BV,51.935023,3,4.130181
+,Raedthuys Windenergie BV,51.935693,3,4.124903
+Rivierduintocht,Rivierduintocht-N,52.591721,12.25,5.605937
+Reigerweg,Romme,52.41509,12.57,5.408179
+,RWE - Essent,52.6330626,7.5,5.638600676
+,RWE - Essent,52.63657567,7.5,5.634927188
+,RWE - Essent,52.64359253,7.5,5.627548851
+Borssele,SBWN,51.443479,6.64,3.695032
+Lepelaarweg,Schermer-Grrr,52.3969,11.4,5.478443
+,Schuijt,52.7724,2,4.724548
+,Siemens,52.042635,1.5,4.517501
+Windkracht 8,Slabbekoorn-Holtrop,52.892019,0.8,5.028559
+Sterappellaan,Smits-Grr,52.37347,10.95,5.478073
+L. Soet,Soet,52.846638,0.8,4.751477
+Sortiva,Sortiva b.v. 1,52.603797,4.6,4.760585
+Spoorwind,Spoorwind-1,52.591315,6,6.22015
+Joarum,St Wiek,53.123625,0.3,5.569705
+,Standhart-4,51.930554,2.5,4.165366
+,Standhart-8,51.923135,2.5,4.173472
+,Standhart-9,51.921139,2.5,4.17544
+,Suikerunie (Raedthuys Pure Energie),51.62647101,12.8,4.419787384
+Dronten-Overijsselsetocht,SVDW-1,52.532815,12.6,5.590393
+WF Swingma (Blanksma),Swingma,53.19747355,0.9,5.441019779
+,Testfield Lelystad 2 BV,52.52191835,3,5.589090261
+TSL North,TSL North,52.54793591,3,5.556889378
+,v.d. Veek,52.764316,2,4.679152
+Tacowind,v.d. Werf,52.863,0.9,5.641996
+Molenwind,v.d.Oord,52.813284,0.85,4.967742
+Appelvinkweg,v.Deursen,52.373607,5.45,5.484677
+Lelystad-Knarweg,Verhoef,52.405009,3.6,5.51425
+Schollevaarweg,Vermue,52.373288,20.4,5.50533
+WP Vermue Startenhuizen Repowering,Vermue,53.3738,0.85,6.7035
+Liesbeth Thijs,Visser,52.625315,5.95,4.983651
+Ibisweg,Voeten,52.397274,4.25,5.355406
+Gaastra Heidenskip,VOF Catharina Wynfang,52.97353305,0.04,5.467592839
+VOF F & B Windkracht,VOF F & B Windkracht,53.27796248,0.85,6.027639172
+Miedema Workum,VOF Heemstede Wynfang,52.96152159,0.04,5.425007422
+Dijkstra Workum,VOF Westerein Wyn,52.96450833,0.04,5.439952818
+WP Kerkmeerweg,VOF Windpark Kerkmeerweg,52.711991,2.5,4.772926
+,Vogelaar-1,52.554571,1.75,5.54106
+,Vogelaar-2,52.556758,1.75,5.544669
+Vursteentocht,Vuursteentocht-Z,52.561707,8,5.586937
+W.A.P.,W.A.-polder-1,51.45514,9,3.927438
+Wagendorp,Wagendorp,52.80205,3,5.080025
+Boekelermeer,WCI,52.605194,2.3,4.758585
+Nauerna,WCI,52.432212,2,4.748268
+Trompet,WCI,52.507535,2,4.703472
+,WCI,52.413961,2,4.868366
+,WCI,52.426447,2,4.813349
+Echteld,WEOM,51.919532,8,5.507662
+Hoofdplaatpolder,WEOM-5,51.372804,10,3.612763
+Westeinde,Westeinde bv,52.856416,6.3,4.762678
+Amsterdam-Noordzeeweg,WGH,52.400295,5.28,4.801595
+Amsterdam-Westpoort,WGH,52.422737,12,4.792036
+Amsterdam-Hemweg,WGH-0,52.415219,5.28,4.825242
+Amsterdam-Sloterdijk,WGH-1,52.392431,2.64,4.773011
+,Wilde Wind-O,51.867799,2,4.305843
+,Wilde Wind-W,51.867538,10,4.300685
+,Windkr-acht B.V.,52.5735732,3,5.874384676
+,Windkr-acht B.V.,52.57712044,3,5.871045105
+Wp Neer,Windpark Neer,51.307073,9.2,5.925961
+Windpark Niedorp,Windpark Nieuwe Niedorp,52.71953834,2.3,4.888594407
+WP Sternweg,Windpark Sternweg B.V.,52.38361189,27,5.546624167
+,Windpowercentre,53.197285,1.3,5.43068
+De Amstelvogel,Windvogel,52.288245,2,4.941873
+De Volhouder,Windvogel,51.5281,0.075,4.255435
+,Winvast,52.634641,3.3,6.719667
+,Winvast,51.945815,3,4.121239
+Wisse Wind,Wisse Wind,51.6383,11.5,4.101971
+W3,Wit,52.814187,0.8,4.830815
+Noordpolder,WNW,53.211858,12.2,5.632419
+,WNW,51.942996,14.9,4.178251
+Minnertsga,WNW/Schuiling-1,53.257134,5.5,5.570969
+,WNW-1,51.98085,2.1,4.052934
+,WNW-2,51.980011,2.1,4.057083
+,WNW-3,51.979076,2.1,4.061196
+,WNW-4,51.97806,2.1,4.065237
+,WNW-5,51.976921,2.1,4.069204
+Gaaster Workum,WO-GA-III-Wind BV,52.9462355,0.04,5.447800581
+Eendragt,WP A7,53.091617,8,5.442273
+Wp De Ambtenaar,Wp De Ambtenaar,52.781905,7.5,5.101527
+Wp Energie BV,Wp Energie BV,52.604689,0.8,4.759392
+Wp Hoevensche Beemden,WP Hoevensche Beemden (Eneco) 1,51.6163,15,4.591001
+WP Hondtocht,Wp Hondtocht 1,52.513332,13.8,5.796699
+Wp IJslandweg,Wp IJslandweg,51.44052498,2.3,3.736402303
+WP Lely,WP Lely,52.51779465,10.4,5.589024747
+WP Postma en Hovenga,WP Postma en Hovenga,52.90648126,0.85,5.421986838
+,wp Roosendaalsche Vliet BV,51.562592,3,4.448844
+,wp Roosendaalsche Vliet BV,51.558588,3,4.442542
+,wp Roosendaalsche Vliet BV,51.554667,3,4.437384
+Wp Tolhuislanden,Wp Tolhuislanden 1,52.558497,9.9,6.203278
+Wp Westenwind,Wp Westenwind 1,52.556058,9.9,6.210251
+Wulpweg,Wulp-2-West-Wass-1,52.382657,14.6,5.328471
+Lage Vaart,WUR,52.506565,8,5.539706
+Mammoettocht,WUR,52.543599,23,5.552555
+Neushoorntocht,WUR,52.543188,23,5.536592
+WP Buren,Yard Energy,51.92421987,8,5.539483631
+Wp Duiven B.V .,Yard Energy,51.97623572,8,6.017480002
+Wp Rembrandt B.V.,Yard Energy,52.64181697,6,6.735299918
+,Yard Energy,51.90000612,3,4.303284385
+,Yard Energy,51.90063377,3,4.298457686
+Tureluurweg,Yard-Blauw-2,52.321487,2.55,5.383317
+Kats-II,Zeeuwind,51.593845,9,3.868795
+Olaz,Zeeuwind-1,51.466026,1.8,3.717654
+Dreischor,Zeeuwind-4,51.706431,0.9,4.001636
+WP Zeshoek,Zeshoek,52.28314,6,5.458217
+,Zuidenwind,51.30507216,2.35,5.936984443
+Glenmuckloch,2020 Renewables,55.3958,25.6,-4.04861
+Inverclyde (Greenock Resubmission),2020 Renewables,55.9183,24,-4.72889
+North Tolsta,2020 Renewables,58.3131,46.2,-6.70944
+Druim Leathann,2020 Renewables,58.3381,42,-6.25111
+Evishagaran,ABO Wind,54.9478,35,-6.83806
+Stornoway Wind Farm,AMEC Foster Wheeler; EDF Energy Renewables,58.2103,180,-6.47667
+Carno Wind Farm Extension - Phase III,Amegni,52.5331,32.5,-3.59361
+Elginny Hill (Resubmission),Antrim Wind,54.9314,20,-6.20583
+Middle Muir,Banks Renewables,55.5083,51,-3.80028
+Kype Muir Extension,Banks Renewables,55.6267,51,-4.035
+Kype Muir,Banks Renewables,55.6269,88.4,-4.03278
+Wathegar Extension,BayWa r.e. renewable energy GmbH,58.4369,18.45,-3.22111
+Crockandun,Brookfield,54.7325,18,-6.78694
+Tralorg,Brookfield,55.2364,20,-4.80556
+Penbreck,Brookfield,55.4753,27,-4.01056
+Kennoxhead,Brookfield,55.4978,64.4,-3.94611
+Larbrax (Resubmission),Brookfield Renewable Energy Group,54.91,20,-5.16639
+Sandy Knowe (Resubmission),Burcote Wind,55.3719,48,-4.05111
+Llyn Brenig,China Guangdong Nuclear Power Group (CGN),53.1003,37.6,-3.50861
+Sanquhar 'Six',Community Windpower,55.3378,19.8,-4.07806
+Sneddon Law,Community Windpower,55.6431,37.5,-4.39472
+Aikengall IIa,Community Windpower,55.8933,75.5,-2.4525
+Beatrice,Copenhagen Infrastructure Partners (CIP); Scottish & Southern Energy Plc (SSE); SDIC Power,58.2536,588,-2.88611
+Creag Riabhach,Creag Riabhach Wind Farm Ltd.,58.2192,72.6,-4.51111
+Hornsea Project One,DONG Energy A/S,53.8786,1197,1.93806
+Hornsea Project Two,DONG Energy A/S,53.9658,1800,1.89694
+Walney Extension East,DONG Energy A/S,54.0869,329,-3.73778
+Walney Extension West,DONG Energy A/S,54.0869,330,-3.73778
+Pollnalaght,DW Consultancy Ltd; Energia,54.5817,38.4,-7.47417
+Heckington Fen,Ecotricity,52.9953,66,-0.210556
+Blyth Offshore Wind Demonstration Project (Phase 2),EDF Energy Nouvelles Group,55.15,30,-1.45444
+Blyth Offshore Wind Demonstration Project (Phase 3),EDF Energy Nouvelles Group,55.15,30,-1.45444
+Blyth Offshore Wind Demonstration Project (Phase 1),EDF Energy Nouvelles Group,55.15,41.5,-1.45444
+Craigton and Spittalhill,EDF Energy Renewables,56.0728,21,-4.14694
+Dorenell,EDF Energy Renewables,57.3511,177,-3.13111
+Moray Firth Eastern Development Area,EDP RenovÃƒÂ¡veis SA,58.1958,1000,-2.78
+Twentyshilling Hill,Element Power,55.3197,27,-3.90028
+Rathsherry,Energia Renewables,54.9419,21,-6.19444
+Llandinam - Repower,Eurus Energy; ScottishPower Renewables,52.4364,102,-3.41361
+Mochrum Fell,Falck Renewables,55.0519,24,-4.00417
+Galloper,Green Investment Bank (GIB); Innogy AG; Macquarie Capital; Siemens Financial Services; Sumitomo Corporation,51.875,336,2.03889
+Dalquhandy,Hargreaves Resources,55.5872,45,-3.89
+East Anglia ONE,Iberdrola,52.2339,714,2.47778
+Windy Edge,Infinis,55.2883,22.5,-2.79806
+Greengairs Landfill Site,Infinis,55.8983,27,-3.93583
+Afton,InfraRed Capital Partners,55.3108,50,-4.17111
+Dogger Bank Creyke Beck A,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,54.8742,1200,1.79806
+Dogger Bank Creyke Beck B,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,54.8742,1200,1.79806
+Dogger Bank Teesside B,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,54.9889,1200,2.22778
+Dogger Bank Teesside A,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,54.9889,1200,2.22778
+Triton Knoll,Innogy AG; Statkraft,53.1061,900,0.865
+Mynydd y Gwair (Resubmission),Innogy Renewables UK Limited,51.7578,40,-3.95583
+Brechfa Forest East,Innogy Renewables UK Limited,52.0094,36,-4.07972
+Carnedd Wen,Innogy Renewables UK Limited,52.6808,150,-3.57028
+Clocaenog Forest,Innogy Renewables UK Limited,53.0714,96,-3.47306
+Glen Kyllachy,Innogy Renewables UK Limited,57.3206,50,-4.08556
+Bad a Cheo,Innogy Renewables UK Limited,58.4147,29.9,-3.42639
+Glen Ullinish,Kilmac Energy,57.3947,42,-6.41472
+Muaitheabhal South Extension,Lewis Wind Power,58.0014,21.6,-6.5875
+Muaitheabhal East Extension,Lewis Wind Power,58.0169,21.6,-6.50806
+Muaitheabhal (Uisenis),Lewis Wind Power,58.0206,118.8,-6.54028
+Crossdykes (Community Share),Muirhall Energy,55.1803,48,-3.16556
+Tom Nan Clach,Nanclach Ltd,57.3822,39,-3.88111
+Cloich Forest,Partnerships for Renewables,55.7206,54,-3.26056
+Camilty,Partnerships for Renewables,55.8183,20.4,-3.50972
+West Benhar (Community Share),Partnerships for Renewables,55.8356,27.2,-3.75444
+Scout Moor Extension (Community Share),Peel Energy,53.6639,36.8,-2.26944
+Llanbrynmair,RES,52.6425,60,-3.56306
+Altahullion Phase III,RES,54.9606,27.6,-7.03278
+Craiggore,RES,54.9967,18,-6.81278
+Castlecraig,RES,55.0417,25,-7.18056
+Solwaybank (Resubmission),RES,55.1042,37.5,-3.10806
+Coire Na Cloiche,RockbySea,57.7939,29.9,-4.36528
+Halsary Forest,ScottishPower Renewables,58.4333,30,-3.40611
+Viking Wind Farm,Shetland Charitable Trust; SSE Renewables; Viking Wind Ltd,60.3319,370.8,-1.23917
+Tangy III (Repowering),SSE Renewables,55.4925,36.8,-5.68139
+Calliachar North,SSE Renewables,56.5761,21,-3.865
+Stronelairg,SSE Renewables,57.0964,228,-4.43528
+Hywind Scotland Pilot Park,Statoil ASA,57.4839,30,-1.36194
+Pigeon Top,TCI Renewables,54.5828,27,-7.45139
+Aultmore II,Vattenfall,57.6164,30,-2.88889
+"European Offshore Wind Deployment Centre (EOWDC, Aberdeen Bay)",Vattenfall AB,57.225,92.4,-1.99278
+Gass,WilloWind Energy Ltd.,54.9614,20.7,-4.73111
+Stranoch,WPDL,55.0244,72,-4.87528
+Kellas,,57.5767,18.4,-3.38083

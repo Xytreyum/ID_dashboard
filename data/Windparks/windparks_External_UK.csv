@@ -1,0 +1,86 @@
+Project Name,Location,County,Region,Turbine Capacity,Number of Turbines,max_MW,Developer,Owner,Local Planning Authority,lat,lon,Type,Project Status
+Glenmuckloch,"Glenmuckloch Surface Coal Mine, Kirkconnel",Dumfries & Galloway,Scotland,3.2,8,25.6,2020 Renewables,2020 Renewables,Dumfries & Galloway,55.3958,-4.04861,onshore,Consented
+Inverclyde (Greenock Resubmission),"Land N &amp; E of Corlic Hill, Greenock",Inverclyde,Scotland,3,8,24,2020 Renewables,2020 Renewables,Inverclyde DC,55.9183,-4.72889,onshore,Consented
+North Tolsta,"Cnoc Airigh Mhic Crishnidh, South Shawbost, Isle Of Lewis",Western Isles,Scotland,3.3,14,46.2,2020 Renewables,2020 Renewables,Western Isles UC,58.3131,-6.70944,onshore,Consented
+Druim Leathann,"Isle of Lewis, 2km W of Tolsta",Western Isles,Scotland,3,14,42,2020 Renewables,2020 Renewables,Western Isles UC,58.3381,-6.25111,onshore,Consented
+Evishagaran,"Gelvin Road, Cruckanim",Co. Londonderry,Northern Ireland,2.5,14,35,ABO Wind,ABO Wind,Belfast Strategic Planning,54.9478,-6.83806,onshore,Consented
+Stornoway Wind Farm,"Stornoway Trust Estate, Isle of Lewis",Western Isles,Scotland,5,36,180,EDF Energy Renewables,AMEC Foster Wheeler; EDF Energy Renewables,Western Isles UC,58.2103,-6.47667,onshore,Consented
+Carno Wind Farm Extension - Phase III,SSA B: Carno North,Powys,Mid Wales,2.5,13,32.5,Amegni,Amegni,Powys CC,52.5331,-3.59361,onshore,Consented
+Elginny Hill (Resubmission),"Carncoagh Hill, Broughshane",Co. Antrim,Northern Ireland,2,10,20,Antrim Wind,Antrim Wind,Belfast Strategic Planning,54.9314,-6.20583,onshore,Consented
+Middle Muir,"NW of Crawfordjohn, South Lanarkshire",South Lanarkshire,Scotland,3.4,15,51,Banks Renewables,Banks Renewables,South Lanarkshire,55.5083,-3.80028,onshore,Consented
+Kype Muir Extension,Land over one mile south of Strathaven and over four miles west of Lesmahagow,South Lanarkshire,Scotland,3.4,15,51,Banks Renewables,Banks Renewables,South Lanarkshire,55.6267,-4.035,onshore,Consented
+Kype Muir,Land over one mile south of Strathaven and over four miles west of Lesmahagow,Lanarkshire,Scotland,3.4,26,88.4,Banks Renewables,Banks Renewables,South Lanarkshire,55.6269,-4.03278,onshore,Consented
+Wathegar Extension,"Wathegar, Bilbster, Wick",Caithness,Scotland,2.05,9,18.45,Whirlwind Renewables,BayWa r.e. renewable energy GmbH,Highlands Council,58.4369,-3.22111,onshore,Consented
+Crockandun,"Junction of Cullion and Drumard Road, Draperstown, Magherafelt",Co. Londonderry,Northern Ireland,3,6,18,Brookfield,Brookfield,Belfast Strategic Planning,54.7325,-6.78694,onshore,Consented
+Tralorg,E of Girvan,South Ayrshire,Scotland,2.5,8,20,PNE Wind UK,Brookfield,South Ayrshire,55.2364,-4.80556,onshore,Consented
+Penbreck,Penbreck and Carmacoup Forest Near Douglas,South Lanarkshire,Scotland,3,9,27,PNE Wind UK,Brookfield,South Lanarkshire,55.4753,-4.01056,onshore,Consented
+Kennoxhead,S of Glespin,South Lanarkshire,Scotland,3.4,19,64.4,PNE Wind UK,Brookfield,South Lanarkshire,55.4978,-3.94611,onshore,Consented
+Larbrax (Resubmission),"Leswalt, Stranraer",Dumfries & Galloway,Scotland,2.5,8,20,PNE Wind UK,Brookfield Renewable Energy Group,Dumfries & Galloway,54.91,-5.16639,onshore,Consented
+Sandy Knowe (Resubmission),Upper Nithsdale,Dumfries & Galloway,Scotland,2,24,48,Burcote Wind,Burcote Wind,Dumfries & Galloway,55.3719,-4.05111,onshore,Consented
+Llyn Brenig,Near Llyn Brenig - SSA (A),Denbighshire,North Wales,2.35,16,37.6,Windpower Wales,China Guangdong Nuclear Power Group (CGN),Denbighshire County Council,53.1003,-3.50861,onshore,Consented
+Sanquhar 'Six',Black Hill,Dumfries & Galloway,Scotland,3.3,6,19.8,Community Windpower,Community Windpower,Dumfries & Galloway,55.3378,-4.07806,onshore,Consented
+Sneddon Law,U41 Hemphill To High Rushaw Moscow,East Ayrshire,Scotland,2.5,15,37.5,Community Windpower,Community Windpower,East Ayrshire UC,55.6431,-4.39472,onshore,Consented
+Aikengall IIa,"Innerwick, Dunbar",East Lothian,Scotland,4,19,75.5,Community Windpower,Community Windpower,East Lothian / Scottish Borders,55.8933,-2.4525,onshore,Consented
+Beatrice,Outer Moray Firth,Highland,Scotland,7,84,588,SSE Renewables,Copenhagen Infrastructure Partners (CIP); Scottish & Southern Energy Plc (SSE); SDIC Power,Highland Council,58.2536,-2.88611,offshore,Consented
+Creag Riabhach,"Altnaharra Estate, Sutherland, Lairg",Highland,Scotland,3.3,22,72.6,Creag Riabhach Wind Farm Ltd.,Creag Riabhach Wind Farm Ltd.,Highland Council,58.2192,-4.51111,onshore,Consented
+Hornsea Project One,103km from Yorkshire Coast,East Riding of Yorkshire,Yorkshire & Humber,7,171,1197,DONG Energy A/S,DONG Energy A/S,,53.8786,1.93806,offshore,Consented
+Hornsea Project Two,89km from Yorkshire Coast,East Riding of Yorkshire,Yorkshire & Humber,6,300,1800,SMartWind,DONG Energy A/S,,53.9658,1.89694,offshore,Consented
+Walney Extension East,"17km Walney Island, Irish Sea",Cumbria,North West,7,47,329,DONG Energy A/S,DONG Energy A/S,Cumbria,54.0869,-3.73778,offshore,Consented
+Walney Extension West,"17km Walney Island, Irish Sea",Cumbria,North West,8.25,40,330,DONG Energy A/S,DONG Energy A/S,Cumbria,54.0869,-3.73778,offshore,Consented
+Pollnalaght,Cornavarrow Road,Co. Tyrone,Northern Ireland,3.2,12,38.4,DW Consultancy Ltd,DW Consultancy Ltd; Energia,County Tyrone,54.5817,-7.47417,onshore,Consented
+Heckington Fen,"East Heckington, North Kesteven",Lincolnshire,East Midlands,3,22,66,Ecotricity,Ecotricity,North Kesteven District Council,52.9953,-0.210556,onshore,Consented
+Blyth Offshore Wind Demonstration Project (Phase 2),6km off Blyth Coast,Northumberland,North East,0,5,30,EDF Energy Nouvelles Group,EDF Energy Nouvelles Group,,55.15,-1.45444,offshore,Consented
+Blyth Offshore Wind Demonstration Project (Phase 3),6km off Blyth Coast,Northumberland,North East,0,5,30,EDF Energy Nouvelles Group,EDF Energy Nouvelles Group,,55.15,-1.45444,offshore,Consented
+Blyth Offshore Wind Demonstration Project (Phase 1),6km off Blyth Coast,Northumberland,North East,8.3,5,41.5,EDF Energy Nouvelles Group,EDF Energy Nouvelles Group,,55.15,-1.45444,offshore,Consented
+Craigton and Spittalhill,"Wester Cringate, Polmaise Road",Stirling,Scotland,3,7,21,Force 9 Energy,EDF Energy Renewables,Stirling Council,56.0728,-4.14694,onshore,Consented
+Dorenell,"Glenfiddich Estate, Dufftown",Moray,Scotland,3,59,177,Infinergy,EDF Energy Renewables,Moray UC,57.3511,-3.13111,onshore,Consented
+Moray Firth Eastern Development Area,On the Smith Bank in the Moray Firth,Highland,Scotland,6,186,1000,EDP RenovÃƒÂ¡veis SA,EDP RenovÃƒÂ¡veis SA,,58.1958,-2.78,offshore,Consented
+Twentyshilling Hill,Approx 4.5km S of Sanquhar,Dumfries & Galloway,Scotland,3,9,27,Element Power,Element Power,Dumfries & Galloway,55.3197,-3.90028,onshore,Consented
+Rathsherry,Broughshane,Co. Antrim,Northern Ireland,3,7,21,Wheelhouse Energy,Energia Renewables,Antrim,54.9419,-6.19444,onshore,Consented
+Llandinam - Repower,"Hirddywell, Llangurig - SSA C",Powys,Mid Wales,3,34,102,CeltPower Ltd,Eurus Energy; ScottishPower Renewables,Powys CC,52.4364,-3.41361,onshore,Consented
+Mochrum Fell,Corsock,Dumfries & Galloway,Scotland,3,8,24,Falck Renewables,Falck Renewables,Dumfries & Galloway,55.0519,-4.00417,onshore,Consented
+Galloper,40 km off Suffolk Coast,East Anglia,Thames Estuary,6,56,336,Innogy Renewables UK Limited,Green Investment Bank (GIB); Innogy AG; Macquarie Capital; Siemens Financial Services; Sumitomo Corporation,N/A,51.875,2.03889,offshore,Consented
+Dalquhandy,SRG Dalquhandy site,South Lanarkshire,Scotland,3,15,45,Hargreaves Resources,Hargreaves Resources,South Lanarkshire,55.5872,-3.89,onshore,Consented
+East Anglia ONE,43 km off Norfolk / Suffolk coast,Suffolk,East of England,7,102,714,ScottishPower Renewables,Iberdrola,,52.2339,2.47778,offshore,Consented
+Windy Edge,"Farmhouse Braidlie, Hawick",Scottish Borders,Scotland,2.5,9,22.5,Infinis,Infinis,Scottish Borders Council,55.2883,-2.79806,onshore,Consented
+Greengairs Landfill Site,Greengairs,North Lanarkshire,Scotland,3,9,27,Infinis,Infinis,North Lanarkshire,55.8983,-3.93583,onshore,Consented
+Afton,New Cumnock,East Ayrshire,Scotland,2,25,50,E.ON Climate & Renewables,InfraRed Capital Partners,East Ayrshire UC,55.3108,-4.17111,onshore,Consented
+Dogger Bank Creyke Beck A,North Sea - 131km from shore,Cleveland,North East,10,120,1200,Innogy AG; Scottish & Southern Energy Plc (SSE); Statkraft; Statoil ASA,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,,54.8742,1.79806,offshore,Consented
+Dogger Bank Creyke Beck B,North Sea - 131km from shore,Cleveland,North East,10,120,1200,Innogy AG; Scottish & Southern Energy Plc (SSE); Statkraft; Statoil ASA,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,,54.8742,1.79806,offshore,Consented
+Dogger Bank Teesside B,North Sea - 165km from shore,Cleveland,North East,10,120,1200,Innogy AG; Scottish & Southern Energy Plc (SSE); Statkraft; Statoil ASA,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,,54.9889,2.22778,offshore,Consented
+Dogger Bank Teesside A,North Sea - 196km from shore,Cleveland,North East,10,120,1200,Innogy AG; Scottish & Southern Energy Plc (SSE); Statkraft; Statoil ASA,Innogy AG; Scottish & Southern Energy Plc (SSE); Statoil ASA,,54.9889,2.22778,offshore,Consented
+Triton Knoll,33km off the Lincolnshire Coast,Lincolnshire,East Midlands,8,113,900,RWE / Statkraft,Innogy AG; Statkraft,East Lindsey DC,53.1061,0.865,offshore,Consented
+Mynydd y Gwair (Resubmission),"Betws, 15km N of Swansea",Swansea,South Wales,2.5,16,40,Innogy Renewables UK Limited,Innogy Renewables UK Limited,Swansea CCC,51.7578,-3.95583,onshore,Consented
+Brechfa Forest East,"Centred around Banc Llywelau, south of Rhydcymerau - SSA G",Carmarthenshire,Mid Wales,3,12,36,Innogy Renewables UK Limited,Innogy Renewables UK Limited,Carmarthenshire County Council,52.0094,-4.07972,onshore,Consented
+Carnedd Wen,"Llanbrynmair Forest, SSA B",Powys,Mid Wales,3,50,150,Innogy Renewables UK Limited,Innogy Renewables UK Limited,Powys CC,52.6808,-3.57028,onshore,Consented
+Clocaenog Forest,SSA A - Forestry Commission site,Denbighshire,North Wales,3,32,96,Innogy Renewables UK Limited,Innogy Renewables UK Limited,N/A,53.0714,-3.47306,onshore,Consented
+Glen Kyllachy,"W of Findhorn Bridge, Tomatin",Highland,Scotland,2.5,20,50,Innogy Renewables UK Limited,Innogy Renewables UK Limited,Highland Council,57.3206,-4.08556,onshore,Consented
+Bad a Cheo,"Achkeepster, Spittal",Highland,Scotland,2.3,13,29.9,Innogy Renewables UK Limited,Innogy Renewables UK Limited,Highland Council,58.4147,-3.42639,onshore,Consented
+Glen Ullinish,"Balmenach Glen, Struan, Skye",Western Isles,Scotland,3,14,42,Kilmac Energy,Kilmac Energy,Highland Council,57.3947,-6.41472,onshore,Consented
+Muaitheabhal South Extension,"Eishken Estate, Lewis",Western Isles,Scotland,2.7,8,21.6,Landowner project,Lewis Wind Power,Western Isles UC,58.0014,-6.5875,onshore,Consented
+Muaitheabhal East Extension,"Eishken Estate, Lewis",Western Isles,Scotland,3.6,6,21.6,GDF Suez,Lewis Wind Power,Western Isles UC,58.0169,-6.50806,onshore,Consented
+Muaitheabhal (Uisenis),"Eishken Estate, Lewis",Western Isles,Scotland,3.6,33,118.8,GDF Suez,Lewis Wind Power,Western Isles UC,58.0206,-6.54028,onshore,Consented
+Crossdykes (Community Share),Langholm,Dumfries & Galloway,Scotland,3.2,15,48,Muirhall Energy,Muirhall Energy,Dumfries & Galloway,55.1803,-3.16556,onshore,Consented
+Tom Nan Clach,"Dava Moor, South East of Inverness",Highland,Scotland,3,13,39,Infinergy,Nanclach Ltd,Highlands Council,57.3822,-3.88111,onshore,Consented
+Cloich Forest,Eddleston,Scottish Borders,Scotland,3,18,54,Partnerships for Renewables,Partnerships for Renewables,Scottish Borders Council,55.7206,-3.26056,onshore,Consented
+Camilty,Harburn,West Lothian,Scotland,3.4,6,20.4,Partnerships for Renewables,Partnerships for Renewables,West Lothian,55.8183,-3.50972,onshore,Consented
+West Benhar (Community Share),"N of Rimmon Cottage, Benhard Road, Shotts",North Lanarkshire,Scotland,3.4,8,27.2,Partnerships for Renewables,Partnerships for Renewables,North Lanarkshire,55.8356,-3.75444,onshore,Consented
+Scout Moor Extension (Community Share),"Rossendale, Rochdale",Lancashire,North West,2.3,16,36.8,Peel Energy,Peel Energy,Rossendale & Rochdale,53.6639,-2.26944,onshore,Consented
+Llanbrynmair,Carno North - SSA (B),Powys,Mid Wales,2,30,60,RES,RES,N/A,52.6425,-3.56306,onshore,Consented
+Altahullion Phase III,"Dungiven, Limavady",Co. Londonderry,Northern Ireland,2.3,12,27.6,RES,RES,Limavady BC,54.9606,-7.03278,onshore,Consented
+Craiggore,Moneyguiggy,Co. Londonderry,Northern Ireland,1.8,10,18,RES,RES,Belfast Strategic Planning,54.9967,-6.81278,onshore,Consented
+Castlecraig,West of Drumquin,Co. Tyrone,Northern Ireland,2.5,10,25,RES,RES,Omagh DC,55.0417,-7.18056,onshore,Consented
+Solwaybank (Resubmission),"Allfornoughthill, Langholm",Dumfries & Galloway,Scotland,2.5,15,37.5,RES,RES,Dumfries & Galloway,55.1042,-3.10806,onshore,Consented
+Coire Na Cloiche,Land At Sidhean A'Choin Bhain Strathrusdale Alness,Highland,Scotland,2.3,13,29.9,RockbySea,RockbySea,Highland Council,57.7939,-4.36528,onshore,Consented
+Halsary Forest,"2km S of Spittal, Caithness",Highland,Scotland,2,15,30,ScottishPower Renewables,ScottishPower Renewables,Highlands Council,58.4333,-3.40611,onshore,Consented
+Viking Wind Farm,"Shetlands, Nesting, Lunnasting and Delting",Shetland Islands,Scotland,3.6,103,370.8,SSE Renewables,Shetland Charitable Trust; SSE Renewables; Viking Wind Ltd,Shetlands,60.3319,-1.23917,onshore,Consented
+Tangy III (Repowering),Kintyre,Argyll & Bute,Scotland,2.3,16,36.8,SSE Renewables,SSE Renewables,Argyll and Bute Council,55.4925,-5.68139,onshore,Consented
+Calliachar North,"2km N of Calliachar Windfarm, Amulree",Perth & Kinross,Scotland,3,7,21,I&H Brown,SSE Renewables,Perth & Kinross,56.5761,-3.865,onshore,Consented
+Stronelairg,South side of Loch Ness,Highland,Scotland,3.45,66,228,SSE Renewables,SSE Renewables,Highland Council,57.0964,-4.43528,onshore,Consented
+Hywind Scotland Pilot Park,"nr Buchan Deep, 25-30km off Peterhead Coast",Aberdeenshire,Scotland,6,5,30,Statoil ASA,Statoil ASA,Aberdeenshire Council,57.4839,-1.36194,offshore,Consented
+Pigeon Top,"Dooish, Drumquin, Omagh",Co. Tyrone,Northern Ireland,2.3,9,27,TCI Renewables,TCI Renewables,Belfast Strategic Planning,54.5828,-7.45139,onshore,Consented
+Aultmore II,Keith,Moray,Scotland,2.3,13,30,Vattenfall,Vattenfall,Moray UC,57.6164,-2.88889,onshore,Consented
+"European Offshore Wind Deployment Centre (EOWDC, Aberdeen Bay)",2-4.5km off Aberdeenshire Coast,Aberdeenshire,Scotland,8.4,11,92.4,Vattenfall AB,Vattenfall AB,Aberdeenshire Council,57.225,-1.99278,offshore,Consented
+Gass,Glenluce,Dumfries & Galloway,Scotland,2.3,9,20.7,WilloWind Energy Ltd.,WilloWind Energy Ltd.,Dumfries & Galloway,54.9614,-4.73111,onshore,Consented
+Stranoch,Between New Luce and Barrhill,Dumfries & Galloway,Scotland,3,24,72,EDF Energy Renewables,WPDL,Dumfries & Galloway,55.0244,-4.87528,onshore,Consented
+Kellas,"Kellas House, Elgin",Moray,Scotland,2.3,8,18.4,Renewable Energy Ventures,,Moray UC,57.5767,-3.38083,onshore,Consented
