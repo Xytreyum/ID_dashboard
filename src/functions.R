@@ -43,7 +43,7 @@ prepare_ID_data_raw <- function(df_ID_data_raw){
     #cumsum per delivery date and border
     df_past$cumsumaux <- ave(df_past$aux,df_past$myid,FUN=cumsum)
     # keep only 2 most recent points.
-    indices_past<-df_past$cumsumaux <= 2
+    indices_past <- df_past$cumsumaux <= 2
     df_past_keep <- df_past[indices_past,]
     # keep pen ultimate point. Thus cumsumaux = 2. In case of one obs take last point
     df_past_grp <- df_past_keep[,c("myid","cumsumaux")] %>%
