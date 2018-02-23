@@ -13,10 +13,53 @@ get_ID_data <- function(date=Sys.Date()) {
         strftime('%Y-%m-%d %H:%M:%S')
 
     stmt <- sprintf(stmt_ID_data %>% strwrap(width=10000, simplify=TRUE),
-            minimal_datetime,
-            maximal_datetime)
+                    minimal_datetime,
+                    maximal_datetime)
     a <- run.query(stmt, 'ID_data')
     return(a$result)
+}
+
+prepare_ID_data_raw <- function(df_ID_data_raw){
+    # add a column to ID_data indicating whether a datetime is in the future or in the past
+    df_ID_data_raw$future <-0
+    df_ID_data_raw[df_ID_data_raw$datetime >= ceiling_date(Sys.time()+3600,unit = "hours"), 'future'] <- 1
+
+    df_ID_data_raw$myid<-paste(df_ID_data_raw$country_from,df_ID_data_raw$country_to,df_ID_data_raw$datetime,sep='_')
+    df_future <- subset(df_ID_data_raw,future == 1)
+    df_past <- subset(df_ID_data_raw,future == 0)
+
+    # for datatimes in the future, only keep the last processed time
+    df_future_keep <- df_future %>%
+        group_by(datetime, country_from, country_to) %>%
+        summarise(processed_time = max(processed_time))
+    df_future <- left_join(df_future_keep,df_future)
+    # for datetimes in the past, check the amount of datetimes available'
+    # if only one available, take that one, if more than one available, take the second one
+
+    # create aux variable that we can cumsum later
+    df_past$aux <-1
+    # order by myid (asc), procssed_time (desc)
+    df_past <- df_past %>% group_by(myid) %>% arrange(desc(processed_time))
+    #cumsum per delivery date and border
+    df_past$cumsumaux <- ave(df_past$aux,df_past$myid,FUN=cumsum)
+    # keep only 2 most recent points.
+    indices_past <- df_past$cumsumaux <= 2
+    df_past_keep <- df_past[indices_past,]
+    # keep pen ultimate point. Thus cumsumaux = 2. In case of one obs take last point
+    df_past_grp <- df_past_keep[,c("myid","cumsumaux")] %>%
+        group_by(myid) %>%
+        summarise(cumsumaux = max(cumsumaux))
+    df_past <- left_join(df_past_grp,df_past, by = c('myid','cumsumaux'))
+    # join past and future together in one dateframe
+    df_ID_data_raw <- merge(df_future,df_past,all = TRUE)
+    #remove the 1 and 2 of Germany, and add those values
+    df_ID_data_raw$country_from <- gsub('1','',df_ID_data_raw$country_from)
+    df_ID_data_raw$country_from <- gsub('2','',df_ID_data_raw$country_from)
+    df_ID_data_raw$country_to <- gsub('1','',df_ID_data_raw$country_to)
+    df_ID_data_raw$country_to <- gsub('2','',df_ID_data_raw$country_to)
+    df_ID_data_raw <- df_ID_data_raw %>% group_by(datetime,country_from,country_to) %>%
+        summarise(value = sum(value), future=max(future))
+    return(df_ID_data_raw)
 }
 
 run.query <- function(stmt, short_name = 'Empty. Fill me!') {

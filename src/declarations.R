@@ -34,32 +34,11 @@ FROM mkonline_data_source mk1 INNER JOIN
     GROUP BY datetime
 ) mk2 on mk1.datetime = mk2.datetime AND mk1.processed_time = mk2.processed_time ORDER BY datetime"
 
-stmt_ID_data <- "
-SELECT
+stmt_ID_data <- "SELECT
     datetime,
     country_from,
     country_to,
-    SUM(value) as value,
+    value,
     processed_time
-FROM (
-    SELECT
-        intraday1.datetime,
-        REPLACE(REPLACE(intraday1.country_from, '1', ''), '2', '') as country_from,
-        REPLACE(REPLACE(intraday1.country_to, '1', ''), '2', '') as country_to,
-        intraday1.value,
-        intraday1.processed_time
-    FROM (select * FROM intraday_data_source) intraday1
-    INNER JOIN (
-        SELECT datetime,
-               country_from,
-               country_to,
-               max(processed_time) as processed_time
-        FROM intraday_data_source
-        GROUP BY datetime, country_from, country_to) intraday2
-    ON intraday1.datetime = intraday2.datetime
-       AND intraday1.country_from = intraday2.country_from
-       AND intraday1.country_to = intraday2.country_to
-       AND intraday1.processed_time = intraday2.processed_time
-    WHERE intraday1.datetime >= '%s' AND intraday1.datetime < '%s') ID_total
-GROUP BY datetime, country_from, country_to
-ORDER BY datetime, country_from, country_to"
+FROM intraday_data_source
+WHERE (datetime >= '%s' AND datetime < '%s')"

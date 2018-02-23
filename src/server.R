@@ -30,10 +30,12 @@ server <- function(input, output, session) {
 
     df_ID_data_raw <- reactive({
         df_ID_data_raw <- get_ID_data()
+        df_ID_data_raw <- prepare_ID_data_raw(df_ID_data_raw)
         autoInvalidate_ID()
         input$refresh_data
         return(df_ID_data_raw)
     })
+
     ID_data <- eventReactive({rv$ID_last_processed_time}, {
         df_ID_data_raw <- df_ID_data_raw()
         if (df_ID_data_raw %>% nrow == 0) {return(data.frame())}
@@ -43,7 +45,7 @@ server <- function(input, output, session) {
 
         list_graphs <- create_graphs_from_raw_ID_data(df_ID_data_raw, unique_datetimes)
         ID_data <- create_initial_empty_ID_data(countries, unique_datetimes)
-        
+
         ID_data <- withProgress(
             message='Obtaining ID paths from graph',
             detail='Happy New Year! Mathias',
@@ -54,6 +56,7 @@ server <- function(input, output, session) {
                 calculate_all_paths(list_graphs, ID_data, df_ID_data_raw, unique_datetimes, countries)
             })
     })
+
     up_ID <- reactive({
         print('up_ID')
         ID_data <- ID_data()
@@ -63,6 +66,7 @@ server <- function(input, output, session) {
         up_ID
 
     })
+
     down_ID <- reactive({
         ID_data <- ID_data()
         if (ID_data %>% length == 0) {return(data.frame())}
@@ -77,7 +81,7 @@ server <- function(input, output, session) {
             with_tz('Europe/Amsterdam') %>%
             strftime("%d %b %H:%M", tz='Europe/Amsterdam')
     })
- 
+
     observeEvent({df_ID_data_raw()}, {
         print('here')
         df_ID_data_raw <- df_ID_data_raw()
@@ -86,30 +90,45 @@ server <- function(input, output, session) {
             rv$ID_last_processed_time <<- df_ID_data_raw$processed_time %>% max
         }
     })
+
     output$ID_plot <- renderPlot({
         print('plot')
-        up_ID() %>% head %>% print
+        up_ID <- up_ID()
+        down_ID <- down_ID()
+        up_ID %>% head %>% print
         input$ID_choice %>% print
+        df_ID_data_raw <- df_ID_data_raw()
+        futures <- rep((df_ID_data_raw %>%
+                           group_by(datetime) %>%
+                           summarise (future = max(future)))$future,
+                       up_ID$variable %>%
+                           unique %>%
+                           length) %>%
+            sort
+        up_ID$future <- futures
+        down_ID$future <- futures
         if (up_ID() %>% nrow == 0) (return())
         p <- ggplot() +
-            geom_bar(data=up_ID(),
+            geom_bar(data=up_ID,
                      aes(x=L1,
                          y=value,
-                         fill=variable),
+                         fill=variable,
+                         alpha=future),
                      stat='identity',
                      color='black',
                      width=.25) +
-            geom_bar(data=down_ID(),
+            geom_bar(data=down_ID,
                      aes(x=L1,
                          y=value,
-                         fill=Var2),
+                         fill=Var2,
+                         alpha=future),
                      stat='identity',
                      color='black',
                      width=.25) +
             scale_fill_manual(values=coloring_ID) +
             scale_x_continuous(expand=c(0,0), breaks=seq(0,24,1), minor_breaks = seq(0,25,1)) +
             geom_hline(aes(yintercept=0), size=2) +
-            xlab('Hour') + ylab('MW')
+            xlab('Hour') + ylab('MW') + scale_alpha(guide = "none")
         p <- p + annotate("text",
                           x= -Inf,
                           y = Inf,
@@ -125,8 +144,10 @@ server <- function(input, output, session) {
                           label=paste0("Exporting from ", input$ID_choice)
         ) + theme(legend.position = 'bottom') +
             guides(fill = guide_legend(nrow=1))
+        p
         return(p)
     })
+
     # IGCC ----
     IGCC_data <- reactive({
         autoInvalidate_IGCC()

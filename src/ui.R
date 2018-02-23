@@ -21,7 +21,7 @@ ui <- dashboardPage(title="ID_Dashboard",
                       )
                     ),
                     dashboardBody({
-                      
+
                       tabsetPanel(
                         id = "conditionedPanels",
                         tabPanel('One',
@@ -65,7 +65,7 @@ ui <- dashboardPage(title="ID_Dashboard",
                                               )
                                           )
                                    )
-                                   
+
                                  )
                         )
                       )
