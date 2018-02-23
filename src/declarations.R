@@ -14,6 +14,12 @@ coloring_ID <- c("Germany" = "white",
                    "France" = "blue",
                    "Denmark" = "green",
                    "Switzerland" = "black")
+coloring_ID_history <- c("Germany" = "white",
+                 "Netherlands" = "orange",
+                 "Belgium" = "red",
+                 "France" = "blue",
+                 "Denmark" = "green",
+                 "Switzerland" = "black")
 coloring_IGCC <- c("DE" = "white",
                    "NL" = "orange",
                    "BE" = "red",
@@ -63,3 +69,12 @@ FROM (
     WHERE intraday1.datetime >= '%s' AND intraday1.datetime < '%s') ID_total
 GROUP BY datetime, country_from, country_to
 ORDER BY datetime, country_from, country_to"
+
+stmt_ID_data_plusHistory <- "SELECT
+    datetime,
+    country_from,
+    country_to,
+    value,
+    processed_time
+FROM intraday_data_source
+WHERE (datetime >= '%s' AND datetime < '%s')"

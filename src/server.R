@@ -34,6 +34,15 @@ server <- function(input, output, session) {
         input$refresh_data
         return(df_ID_data_raw)
     })
+
+    df_ID_data_raw_plusHistory <- reactive({
+        df_ID_data_raw_plusHistory <- get_ID_data_plusHistory()
+        df_ID_data_raw_plusHistory <- prepare_ID_data_raw_plusHistory(df_ID_data_raw_plusHistory)
+        autoInvalidate_ID()
+        input$refresh_data
+        return(df_ID_data_raw_plusHistory)
+    })
+
     ID_data <- eventReactive({rv$ID_last_processed_time}, {
         df_ID_data_raw <- df_ID_data_raw()
         if (df_ID_data_raw %>% nrow == 0) {return(data.frame())}
@@ -43,7 +52,7 @@ server <- function(input, output, session) {
 
         list_graphs <- create_graphs_from_raw_ID_data(df_ID_data_raw, unique_datetimes)
         ID_data <- create_initial_empty_ID_data(countries, unique_datetimes)
-        
+
         ID_data <- withProgress(
             message='Obtaining ID paths from graph',
             detail='Happy New Year! Mathias',
@@ -54,6 +63,28 @@ server <- function(input, output, session) {
                 calculate_all_paths(list_graphs, ID_data, df_ID_data_raw, unique_datetimes, countries)
             })
     })
+
+    ID_data_history <- eventReactive({rv$ID_last_processed_time}, {
+        df_ID_data_raw_plusHistory <- df_ID_data_raw_plusHistory()
+        if (df_ID_data_raw_plusHistory %>% nrow == 0) {return(data.frame())}
+
+        unique_datetimes <- df_ID_data_raw_plusHistory$datetime %>% unique
+        countries <- c(df_ID_data_raw_plusHistory$country_from %>% unique, df_ID_data_raw_plusHistory$country_to %>% unique) %>% unique
+
+        list_graphs <- create_graphs_from_raw_ID_data(df_ID_data_raw_plusHistory, unique_datetimes)
+        ID_data <- create_initial_empty_ID_data(countries, unique_datetimes)
+
+        ID_data <- withProgress(
+            message='Obtaining ID history paths from graph',
+            detail='Happy New Year! Mathias',
+            value=NULL,
+            style='old',
+            {
+                # The actual data fetching
+                calculate_all_paths(list_graphs, ID_data, df_ID_data_raw_plusHistory, unique_datetimes, countries)
+            })
+    })
+
     up_ID <- reactive({
         print('up_ID')
         ID_data <- ID_data()
@@ -63,6 +94,17 @@ server <- function(input, output, session) {
         up_ID
 
     })
+
+    up_ID_history <- reactive({
+        print('up_ID_history')
+        ID_data_history <- ID_data_history()
+        if (ID_data_history %>% length == 0) {return(data.frame())}
+        up_ID_history <- lapply(ID_data_history, function(x) (-1. * x[input$ID_choice_history, ])) %>% melt(id=NULL)
+        up_ID_history$L1 <- up_ID_history$L1 /4 -.125
+        up_ID_history
+
+    })
+
     down_ID <- reactive({
         ID_data <- ID_data()
         if (ID_data %>% length == 0) {return(data.frame())}
@@ -71,13 +113,21 @@ server <- function(input, output, session) {
         down_ID
     })
 
+    down_ID_history <- reactive({
+        ID_data_history <- ID_data_history()
+        if (ID_data_history %>% length == 0) {return(data.frame())}
+        down_ID_history <- lapply(ID_data_history, function(x) x[, input$ID_choice_history, drop=FALSE] %>% t) %>% melt
+        down_ID_history$L1 <- down_ID_history$L1 /4 -.125
+        down_ID_history
+    })
+
     # Complementary stuff ----
     output$compared_time <- renderText({
         compared_time() %>%
             with_tz('Europe/Amsterdam') %>%
             strftime("%d %b %H:%M", tz='Europe/Amsterdam')
     })
- 
+
     observeEvent({df_ID_data_raw()}, {
         print('here')
         df_ID_data_raw <- df_ID_data_raw()
@@ -86,6 +136,7 @@ server <- function(input, output, session) {
             rv$ID_last_processed_time <<- df_ID_data_raw$processed_time %>% max
         }
     })
+
     output$ID_plot <- renderPlot({
         print('plot')
         up_ID() %>% head %>% print
@@ -127,6 +178,64 @@ server <- function(input, output, session) {
             guides(fill = guide_legend(nrow=1))
         return(p)
     })
+
+    output$ID_plot_history <- renderPlot({
+        print('plot')
+        up_ID_history <- up_ID_history()
+        down_ID_history <- down_ID_history()
+        up_ID_history %>% head %>% print
+        input$ID_choice_history %>% print
+        df_ID_data_raw_plusHistory <- df_ID_data_raw_plusHistory()
+        futures <- rep((df_ID_data_raw_plusHistory %>%
+                           group_by(datetime) %>%
+                           summarise (future = max(future)))$future,
+                       up_ID_history$variable %>%
+                           unique %>%
+                           length) %>%
+            sort
+        up_ID_history$future <- futures
+        down_ID_history$future <- futures
+        if (up_ID_history() %>% nrow == 0) (return())
+        p <- ggplot() +
+            geom_bar(data=up_ID_history,
+                     aes(x=L1,
+                         y=value,
+                         fill=variable,
+                         alpha=future),
+                     stat='identity',
+                     color='black',
+                     width=.25) +
+            geom_bar(data=down_ID_history,
+                     aes(x=L1,
+                         y=value,
+                         fill=Var2,
+                         alpha=future),
+                     stat='identity',
+                     color='black',
+                     width=.25) +
+            scale_fill_manual(values=coloring_ID_history) +
+            scale_x_continuous(expand=c(0,0), breaks=seq(0,24,1), minor_breaks = seq(0,25,1)) +
+            geom_hline(aes(yintercept=0), size=2) +
+            xlab('Hour') + ylab('MW') + scale_alpha(guide = "none")
+        p <- p + annotate("text",
+                          x= -Inf,
+                          y = Inf,
+                          hjust=0,
+                          vjust=1,
+                          label=paste0("Importing into ", input$ID_choice_history)
+        )
+        p <- p + annotate("text",
+                          x= -Inf,
+                          y = -Inf,
+                          hjust=0,
+                          vjust=-1,
+                          label=paste0("Exporting from ", input$ID_choice_history)
+        ) + theme(legend.position = 'bottom') +
+            guides(fill = guide_legend(nrow=1))
+        p
+        return(p)
+    })
+
     # IGCC ----
     IGCC_data <- reactive({
         autoInvalidate_IGCC()

@@ -21,7 +21,7 @@ ui <- dashboardPage(title="ID_Dashboard",
                       )
                     ),
                     dashboardBody({
-                      
+
                       tabsetPanel(
                         id = "conditionedPanels",
                         tabPanel('One',
@@ -65,7 +65,35 @@ ui <- dashboardPage(title="ID_Dashboard",
                                               )
                                           )
                                    )
-                                   
+
+                                 )
+                        ),
+                        tabPanel('Two',
+                                 value=1,
+                                 style="padding=0px;",
+                                 fluidRow(
+                                     box(title='ID capacity',
+                                         solidHeader=FALSE,
+                                         collapsible=TRUE,
+                                         color='lime',
+                                         width=12,
+                                         heigth=600,
+                                         fluidRow(
+                                             pickerInput('ID_choice_history',
+                                                         NULL,
+                                                         choices=list('Netherlands',
+                                                                      'Belgium',
+                                                                      'Denmark',
+                                                                      'France',
+                                                                      'Germany',
+                                                                      'Switzerland'),width = 150
+                                             ),
+                                             plotOutput('ID_plot_history',
+                                                        height="250",
+                                                        width="90%")
+                                         )
+                                     )
+
                                  )
                         )
                       )
