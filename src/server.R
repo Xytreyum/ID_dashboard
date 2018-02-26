@@ -11,7 +11,8 @@ pacman::p_load(shiny,
                magrittr,
                grDevices,
                data.table,
-               igraph)
+               igraph,
+               dplyr)
 
 source("functions.R")
 # test
