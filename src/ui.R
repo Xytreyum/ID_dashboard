@@ -45,6 +45,7 @@ ui <- dashboardPage(title="ID_Dashboard",
                                                                   'Switzerland'),width = 150
                                          ),
                                          plotOutput('ID_plot',
+                                                    click = "graph_click",
                                                     height="250",
                                                     width="90%")
                                        )
@@ -64,7 +65,23 @@ ui <- dashboardPage(title="ID_Dashboard",
                                                            width="90%")
                                               )
                                           )
-                                   )
+                                   ),
+                                   column(7, offset = 0,
+                                          style='padding: 0px;',
+                                          align='center',
+                                          box(title = 'Volume evolution',
+                                              solidHeader=FALSE,
+                                              collapsible = TRUE,
+                                              color = 'lime',
+                                              width=20,
+                                              heigth=300,
+                                              fluidRow(
+                                                  plotOutput('history_plot',
+                                                             height = "250",
+                                                             width = "90%")
+                                              )
+                                              )
+                                          )
 
                                  )
                         )

@@ -42,3 +42,12 @@ stmt_ID_data <- "SELECT
     processed_time
 FROM intraday_data_source
 WHERE (datetime >= '%s' AND datetime < '%s')"
+
+stmt_history_ID_data <- "SELECT
+    datetime,
+country_from,
+country_to,
+value,
+processed_time
+FROM intraday_data_source
+WHERE datetime = %s ORDER BY processed_time"

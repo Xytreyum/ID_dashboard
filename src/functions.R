@@ -101,6 +101,18 @@ get_IGCC_data <- function() {
     return(df_IGCC)
 }
 
+get_history_ID_hour <- function(hour_minute_graph) {
+    datehour <- paste0(Sys.Date(),' ', hour_minute_graph)%>% 
+        strptime('%Y-%m-%d %H:%M',tz='Europe/Amsterdam') %>% 
+        with_tz('UTC') %>% 
+        strftime('%Y-%m-%d %H:%M')
+    stmt <- sprintf(stmt_history_ID_data %>% strwrap(width=10000, simplify=TRUE),
+                    paste0('\'',datehour,':00\''))
+    df_history_ID_hour <- run.query(stmt,'history_ID')
+    
+    return(df_history_ID_hour$result)
+}
+
 create_graphs_from_raw_ID_data <- function(df_ID_data_raw, unique_datetimes) {
     unique_datetimes <- df_ID_data_raw$datetime %>% unique
 

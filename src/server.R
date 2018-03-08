@@ -20,6 +20,7 @@ source("declarations.R")
 
 rv <- reactiveValues(click=NULL,
                      click_value=NULL,
+                     history_click=NULL,
                      ID_last_processed_time=Sys.time())
 
 server <- function(input, output, session) {
@@ -146,6 +147,84 @@ server <- function(input, output, session) {
         ) + theme(legend.position = 'bottom') +
             guides(fill = guide_legend(nrow=1))
         p
+        return(p)
+    })
+    
+    observeEvent(input$graph_click,{
+        x <- input$graph_click$x
+        if (is.null(x)) {
+            return()
+        }
+        rv$history_click <<- x
+    })
+    
+    output$history_plot <- renderPlot({
+        x <- rv$history_click
+        input$refresh_data
+        autoInvalidate_ID()
+        if (is.null(x)) {
+            return()
+        }
+        hour_graph <- floor(x)
+        minute_graph <- floor((x %% 1)*60/15)*15
+        hour_minute_graph <- paste0(hour_graph,':',minute_graph)
+        df_history_plot <- get_history_ID_hour(hour_minute_graph)
+        title_plot <- unique(df_history_plot$datetime)
+        df_history_plot$datetime <- df_history_plot$datetime %>% 
+            strptime(format="%Y-%m-%d %H:%M:%S", tz='UTC') %>%
+            with_tz('Europe/Amsterdam') %>%
+            as.POSIXct
+        df_history_plot$processed_time <- df_history_plot$processed_time %>% 
+            strptime(format="%Y-%m-%d %H:%M:%S", tz='UTC') %>%
+            with_tz('Europe/Amsterdam') %>%
+            as.POSIXct
+        data_df_export <- subset(df_history_plot,country_from == input$ID_choice)
+        data_df_export$value<- data_df_export$value * -1
+        data_df_import <- subset(df_history_plot,country_to == input$ID_choice)
+        p <- ggplot() +
+            geom_step(data=data_df_export,
+                      aes(x=processed_time,
+                          y=value,
+                          colour=country_to,
+                          group=country_to), size=2) +
+            geom_step(data=data_df_import,
+                      aes(x=processed_time,
+                          y=value,
+                          colour=country_from,
+                          group=country_from), size=2) +
+            geom_point(data=data_df_export,
+                      aes(x=processed_time,
+                          y=value,
+                          colour=country_to,
+                          group=country_to), size=2) +
+            geom_point(data=data_df_import,
+                      aes(x=processed_time,
+                          y=value,
+                          colour=country_from,
+                          group=country_from), size=2) +
+            geom_hline(aes(yintercept=0), size=2) +
+            xlab('Hour') + ylab('MW') + scale_alpha(guide = "none")
+        p <- p + annotate("text",
+                          x= paste0(Sys.Date(), '00:00:00') %>% strptime(format="%Y-%m-%d %H:%M:%S", tz='Europe/Amsterdam') %>%
+                              as.POSIXct,
+                          y = Inf,
+                          hjust=0,
+                          vjust=1,
+                          label=paste0("Importing into ", input$ID_choice)
+        )
+        p <- p + annotate("text",
+                          x= paste0(Sys.Date(), '00:00:00') %>% strptime(format="%Y-%m-%d %H:%M:%S", tz='Europe/Amsterdam') %>%
+                                        as.POSIXct,
+                          y = -Inf,
+                          hjust=0,
+                          vjust=-1,
+                          label=paste0("Exporting from ", input$ID_choice)
+        ) + theme(legend.position = 'bottom') +
+            guides(fill = guide_legend(nrow=1, title = 'Border with:'))+
+            ggtitle(title_plot)+
+            scale_x_datetime(limits = c(paste0(Sys.Date(), '00:00:00') %>% strptime(format="%Y-%m-%d %H:%M:%S", tz='Europe/Amsterdam') %>%
+                                            as.POSIXct, Sys.time()), breaks=date_breaks("1 hour"), 
+                             labels= date_format("%H:%M", tz="Europe/Amsterdam"))
         return(p)
     })
 
